@@ -6,16 +6,109 @@
 
 :root {
 
-/* ## Primary*/ 
+
  
 --Moderateviolet: hsl(263, 55%, 52%);
 --Verydarkgrayishblue: hsl(217, 19%, 35%);
 --Verydarkblackishblue: hsl(219, 29%, 14%);
 --White: hsl(0, 0%, 100%);
 
-/* ## Secondary */
 
 --Lightgray: hsl(0, 0%, 81%);
 --Lightgrayishblue: hsl(210, 46%, 95%);
 
+}
+
+html {
+    background-color: var(--Lightgrayishblue);
+}
+
+body {
+    font-family: Barlow Semi Condensed;
+    color: white;
+}
+ 
+.daniel {
+    background-image: url(img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 20px ;
+    background-color: var(--Moderateviolet);
+}
+
+.jonathan {
+    background-color: var(--Verydarkblackishblue);
+}
+    
+.jeanette {
+    background-color: var(--White);
+    color: var(--Verydarkgrayishblue);
+}
+
+.patrick {
+    background-color: var(--Verydarkgrayishblue);
+}
+
+.kira {
+    background-color: var(--White);
+    color: var(--Verydarkgrayishblue);
+}
+
+div {
+    margin: 20px;
+    padding: 25px 30px 30px;
+    border-radius: 7.5px;
+    text-align: left;
+    line-height: 1.2;
+    
+    
+    
+    
+}
+
+section,p,q {
+    margin-bottom: 13px ;
+}
+section {
+    width: fit-content;
+}
+
+
+.sub {
+    opacity: 50%;
+}
+ 
+h2 {
+    font-size: 0.8rem;
+    display: inline-block;
+   /*  position: relative;
+    right: 15px; */
+    color:white;
+    font-weight: 500;
+    
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid var(--Lightgray);
+    width: 2rem; 
+    height: 2rem; 
+    display: inline-block;
+    margin-right: 10px;
+    
+   /*  position: relative;
+    top: 33px;
+    right: 15px; */
+    
+    
+
+}
+
+p {
+    
+    font-size: 1.2rem;
+}
+
+q {
+    font-size: 0.8rem;
+    opacity: 70%;
 }

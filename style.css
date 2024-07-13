@@ -33,24 +33,30 @@ body {
     background-repeat: no-repeat;
     background-position: top right 20px ;
     background-color: var(--Moderateviolet);
+    text-align: left;
+    grid-area: d;
 }
 
 .jonathan {
     background-color: var(--Verydarkblackishblue);
+    grid-area: jon;
 }
     
 .jeanette {
     background-color: var(--White);
     color: var(--Verydarkgrayishblue);
+    grid-area: jen;
 }
 
 .patrick {
     background-color: var(--Verydarkgrayishblue);
+    grid-area: p;
 }
 
 .kira {
     background-color: var(--White);
     color: var(--Verydarkgrayishblue);
+    grid-area: k;
 }
 
 div {
@@ -72,7 +78,9 @@ section {
     width: fit-content;
 }
 
-
+q {
+    text-align: left;
+}
 .sub {
     opacity: 50%;
 }
@@ -87,9 +95,13 @@ h2 {
     
 }
 
+.women {
+    color: var(--Verydarkgrayishblue);
+}
+
 img {
     border-radius: 50%;
-    border: 2px solid var(--Lightgray);
+    
     width: 2rem; 
     height: 2rem; 
     display: inline-block;
@@ -111,4 +123,49 @@ p {
 q {
     font-size: 0.8rem;
     opacity: 70%;
+}
+
+
+.di {
+    border: 2px solid hsl(263, 100%, 73%);
+}
+
+.joi {
+    border: 2px solid var(--Verydarkblackishblue);
+}
+
+
+.jei {
+    border: 2px solid var(--White);
+    
+}
+
+.pi {
+    border: 2px solid var(--Moderateviolet);
+}
+
+.ki {
+    border: 2px solid var(--White);
+}
+
+@media screen and (min-width:1440px) {
+
+body {
+    display: grid;
+    grid-template-areas: 'd d jon k'
+               'jen p p k ';
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 150px 150px;
+    width: 90%;
+    height: auto;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
 }
